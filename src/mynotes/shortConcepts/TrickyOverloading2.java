@@ -19,6 +19,11 @@ public class TrickyOverloading2 {
         obj.method(1);
         obj.method(sb1);
         //obj.method(null); // The method method(Object) is ambiguous
+
+        final Integer obj1 = null;
+        final String obj2 = null;
+        obj.method(obj1);
+        obj.method(obj2);
     }
 
 }
