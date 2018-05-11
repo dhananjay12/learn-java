@@ -1,4 +1,4 @@
-package mynotes.designPatterns.structural;
+package mynotes.patterns.structural.decorator;
 
 
 public class Whip extends CondimentDecorator {

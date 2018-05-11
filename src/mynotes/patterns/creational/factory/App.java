@@ -1,4 +1,4 @@
-package mynotes.designPatterns.creational;
+package mynotes.patterns.creational.factory;
 
 public class App {
 
