@@ -1,14 +1,12 @@
 package mynotes.patterns.structural.decorator;
 
 public class HouseBlend extends Beverage {
-
 	public HouseBlend() {
-		description="House Blend";
+		description = "House Blend Coffee";
 	}
-	
-	@Override
+ 
 	public double cost() {
-		return .99;
+		return .89;
 	}
-
 }
+

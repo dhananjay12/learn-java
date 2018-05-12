@@ -1,20 +1,17 @@
 package mynotes.patterns.structural.decorator;
 
 public class Mocha extends CondimentDecorator {
-	
 	Beverage beverage;
+ 
 	public Mocha(Beverage beverage) {
-		this.beverage=beverage;
+		this.beverage = beverage;
 	}
-
-	@Override
+ 
 	public String getDescription() {
-		return beverage.getDescription()+", Mocha";
+		return beverage.getDescription() + ", Mocha";
 	}
-
-	@Override
+ 
 	public double cost() {
-		return beverage.cost()+.20;
+		return .20 + beverage.cost();
 	}
-
 }
