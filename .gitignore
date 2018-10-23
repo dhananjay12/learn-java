@@ -1,15 +1,32 @@
-*.class
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn
+mvn*
+
+*/bin/
+*/target/
+
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+.settings
+.springBeans
+.sts4-cache
+.attach_pid*
 
-# Package Files #
-*.jar
-*.war
-*.ear
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
 
-/bin/
-
-test.srt
-test.txt
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
