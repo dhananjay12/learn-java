@@ -1,360 +1,92 @@
 
 1
-00:00:04.690 --> 00:00:07.299
-So before we leave this section I want
+00:00:02,6 --> 00:00:05,6
+- Let's start by defining the terms enterprise
 
 2
-00:00:07.299 --> 00:00:09.850
-to show you the Kotlin read eval in
+00:00:05,6 --> 00:00:08,6
+- and enterprise integration.
 
 3
-00:00:09.850 --> 00:00:14.019
-print loop, also known as the repl now
+00:00:08,6 --> 00:00:12,6
+- An enterprise covers the whole supply chain of a business.
 
 4
-00:00:14.019 --> 00:00:16.209
-maybe they say that as a repl, I don't
+00:00:12,6 --> 00:00:14,6
+- When I refer to enterprise systems,
 
 5
-00:00:16.209 --> 00:00:19.720
-know the repl lets you practice your
+00:00:14,6 --> 00:00:16,6
+- I'm referring to the systems that are participating
 
 6
-00:00:19.720 --> 00:00:21.279
-Kotlin and you can also use it to
+00:00:16,6 --> 00:00:19,6
+- in the supply chain.
 
 7
-00:00:21.279 --> 00:00:22.810
-quickly check whether a code snippet
+00:00:19,6 --> 00:00:21,6
+- Enterprises include, not only internal systems,
 
 8
-00:00:22.810 --> 00:00:25.720
-will work. So in IntelliJ you can get to
+00:00:21,6 --> 00:00:24,6
+- but external systems as well.
 
 9
-00:00:25.720 --> 00:00:29.080
-it by going to tools Kotlin and then
+00:00:24,6 --> 00:00:27,6
+- In order to gain value in the supply chain,
 
 10
-00:00:29.080 --> 00:00:32.680
-down to Kotlin repl here and you'll
+00:00:27,6 --> 00:00:28,6
+- we need to make these systems communicate
 
 11
-00:00:32.680 --> 00:00:33.940
-notice that it opens up at the bottom
+00:00:28,6 --> 00:00:31,6
+- with one another.
 
 12
-00:00:33.940 --> 00:00:35.920
-and there's a great outline here saying
+00:00:31,6 --> 00:00:34,6
+- To accomplish this, we use enterprise
 
 13
-00:00:35.920 --> 00:00:38.230
-ctrl + enter to execute remember that,
+00:00:34,6 --> 00:00:36,6
+- integration practices.
 
 14
-00:00:38.230 --> 00:00:40.870
-because you'll tend to hit enter
+00:00:36,6 --> 00:00:40,6
+- Enterprise integration connects disparate systems.
 
 15
-00:00:40.870 --> 00:00:42.570
-and then wonder why nothing is happening.
+00:00:40,6 --> 00:00:42,6
+- Connecting these systems is complex.
 
 16
-00:00:42.570 --> 00:00:45.579
-So now we can type any expression into
+00:00:42,6 --> 00:00:45,6
+- Enterprises are always evolving.
 
 17
-00:00:45.579 --> 00:00:48.640
-the repl and we hit ctrl enter and it
+00:00:45,6 --> 00:00:47,6
+- New systems are being built, purchased,
 
 18
-00:00:48.640 --> 00:00:50.860
-will be evaluated for us, so let's try
+00:00:47,6 --> 00:00:50,6
+- enhanced and acquired.
 
 19
-00:00:50.860 --> 00:00:55.300
-3 + 4 and we hit ctrl enter and we'll see
+00:00:50,6 --> 00:00:53,6
+- Often we don't control all the systems in the enterprise.
 
 20
-00:00:55.300 --> 00:00:56.920
-that 7 comes up and you'll notice that
+00:00:53,6 --> 00:00:55,6
+- Finally, systems don't have the same
 
 21
-00:00:56.920 --> 00:00:59.289
-there's an equal sign here so this is
+00:00:55,6 --> 00:00:57,6
+- protocols for communication.
 
 22
-00:00:59.289 --> 00:01:01.539
-the result of the expression up here.
+00:00:57,6 --> 00:00:59,6
+- They may have different operating systems,
 
 23
-00:01:01.539 --> 00:01:05.379
-Let's try 5 minus 2 and the other way
-
-24
-00:01:05.379 --> 00:01:07.270
-that we can execute an expression is
-
-25
-00:01:07.270 --> 00:01:09.459
-just to click the green run-button here,
-
-26
-00:01:09.459 --> 00:01:13.300
-button rather and we'll see that we get 3,
-
-27
-00:01:13.300 --> 00:01:15.399
-Now, you'll notice that above the
-
-28
-00:01:15.399 --> 00:01:18.840
-repl window it says in module
-
-29
-00:01:18.840 --> 00:01:22.060
-declarations, the repl knows about the
-
-30
-00:01:22.060 --> 00:01:24.700
-definitions in your project so we can
-
-31
-00:01:24.700 --> 00:01:27.039
-reference them. So for example we could
-
-32
-00:01:27.039 --> 00:01:30.190
-start typing employee and it will
-
-33
-00:01:30.190 --> 00:01:32.770
-actually suggest the employee definition
-
-34
-00:01:32.770 --> 00:01:35.950
-that we have in our project. So let's go
-
-35
-00:01:35.950 --> 00:01:42.420
-back and type var employee 3 equals
-
-36
-00:01:42.420 --> 00:01:47.619
-employee give him the name John Doe and
-
-37
-00:01:47.619 --> 00:01:53.520
-let's give him an ID of let's say 300.
-
-38
-00:01:53.520 --> 00:01:58.360
-Now, we have to declare our employee here
-
-39
-00:01:58.360 --> 00:02:00.000
-and then we'll import it into the repl.
-
-40
-00:02:00.000 --> 00:02:03.429
-Also, it's underlined employee 3 just as
-
-41
-00:02:03.429 --> 00:02:04.899
-it does in the editor, because it's
-
-42
-00:02:04.899 --> 00:02:06.849
-mutable. Now we don't want to run yet
-
-43
-00:02:06.849 --> 00:02:08.920
-because there's no expression here, we're
-
-44
-00:02:08.920 --> 00:02:10.509
-just doing an assignment statement.
-
-45
-00:02:10.509 --> 00:02:13.300
-So we'll just go to then to the end of
-
-46
-00:02:13.300 --> 00:02:15.340
-the line press enter and then we'll say
-
-47
-00:02:15.340 --> 00:02:18.430
-well print line employee 3.
-
-48
-00:02:18.430 --> 00:02:20.379
-And at this point there is something we
-
-49
-00:02:20.379 --> 00:02:23.290
-can do, so we'll hit ctrl enter and we'll
-
-50
-00:02:23.290 --> 00:02:26.920
-see that we get employee 3 printed.
-
-51
-00:02:26.920 --> 00:02:29.110
-Now, because we're in the repl, we don't
-
-52
-00:02:29.110 --> 00:02:32.379
-actually have to use print line, so we
-
-53
-00:02:32.379 --> 00:02:35.709
-can just type in employee 3 dot name for
-
-54
-00:02:35.709 --> 00:02:37.900
-example and then hit ctrl enter and it
-
-55
-00:02:37.900 --> 00:02:40.450
-will print John Doe, so it kind of knows
-
-56
-00:02:40.450 --> 00:02:42.489
-that because you're in the repl, you
-
-57
-00:02:42.489 --> 00:02:44.859
-want to see results and so it doesn't
-
-58
-00:02:44.859 --> 00:02:47.049
-force you to actually type print line,
-
-59
-00:02:47.049 --> 00:02:48.400
-but you can if you want.
-
-60
-00:02:48.400 --> 00:02:51.010
-So the repple knows about definitions in
-
-61
-00:02:51.010 --> 00:02:52.720
-your project, you do have to import them
-
-62
-00:02:52.720 --> 00:02:54.909
-but it's aware of them and it also knows
-
-63
-00:02:54.909 --> 00:02:57.310
-about previous definitions you've made,
-
-64
-00:02:57.310 --> 00:02:59.489
-like for example once we declared
-
-65
-00:02:59.489 --> 00:03:01.989
-employee 3 here, we didn't have to
-
-66
-00:03:01.989 --> 00:03:04.060
-declare it again. Once we've used it we
-
-67
-00:03:04.060 --> 00:03:05.709
-can just go ahead and keep using it in
-
-68
-00:03:05.709 --> 00:03:08.230
-this instance of the of the repl, so if
-
-69
-00:03:08.230 --> 00:03:09.760
-you want to play with some code, without
-
-70
-00:03:09.760 --> 00:03:11.680
-having to compile and run it, this is a
-
-71
-00:03:11.680 --> 00:03:13.299
-great way to do it and you know when
-
-72
-00:03:13.299 --> 00:03:15.370
-you're first learning Kotlin, before you
-
-73
-00:03:15.370 --> 00:03:18.730
-type a long statement into your file, you
-
-74
-00:03:18.730 --> 00:03:20.230
-might want to try the repl and make
-
-75
-00:03:20.230 --> 00:03:22.030
-sure it's going to do what the
-
-76
-00:03:22.030 --> 00:03:23.319
-statements going to do, what you expect
-
-77
-00:03:23.319 --> 00:03:24.849
-it to do. Now when you're finished
-
-78
-00:03:24.849 --> 00:03:26.829
-playing, you can just press the red X on
-
-79
-00:03:26.829 --> 00:03:29.609
-the left to stop and close the repl,
-
-80
-00:03:29.609 --> 00:03:32.560
-if you don't want to close it, but you want
-
-81
-00:03:32.560 --> 00:03:34.480
-to clear what's there and rebuild your
-
-82
-00:03:34.480 --> 00:03:37.060
-project, you can just press the restart
-
-83
-00:03:37.060 --> 00:03:39.669
-button right here. So if we were to do
-
-84
-00:03:39.669 --> 00:03:43.060
-that, it actually rebuilds our project
-
-85
-00:03:43.060 --> 00:03:45.669
-here and then it comes and says ok, I'm
-
-86
-00:03:45.669 --> 00:03:47.590
-ready for action again or you can just
-
-87
-00:03:47.590 --> 00:03:50.019
-close it and I've got a couple of tabs
-
-88
-00:03:50.019 --> 00:03:52.299
-open here, so I'll close them all and
-
-89
-00:03:52.299 --> 00:03:56.169
-there we go, that's the Kotlin read eval
-
-90
-00:03:56.169 --> 00:04:00.180
-print loop. I'll see you in the next video.
+00:00:59,6 --> 00:01:03,576
+- formats, languages, etc.

@@ -1,90 +1,23 @@
-So before we leave this section I want
-to show you the Kotlin read eval in
-print loop, also known as the repl now
-maybe they say that as a repl, I don't
-know the repl lets you practice your
-Kotlin and you can also use it to
-quickly check whether a code snippet
-will work. So in IntelliJ you can get to
-it by going to tools Kotlin and then
-down to Kotlin repl here and you'll
-notice that it opens up at the bottom
-and there's a great outline here saying
-ctrl + enter to execute remember that,
-because you'll tend to hit enter
-and then wonder why nothing is happening.
-So now we can type any expression into
-the repl and we hit ctrl enter and it
-will be evaluated for us, so let's try
-3 + 4 and we hit ctrl enter and we'll see
-that 7 comes up and you'll notice that
-there's an equal sign here so this is
-the result of the expression up here.
-Let's try 5 minus 2 and the other way
-that we can execute an expression is
-just to click the green run-button here,
-button rather and we'll see that we get 3,
-Now, you'll notice that above the
-repl window it says in module
-declarations, the repl knows about the
-definitions in your project so we can
-reference them. So for example we could
-start typing employee and it will
-actually suggest the employee definition
-that we have in our project. So let's go
-back and type var employee 3 equals
-employee give him the name John Doe and
-let's give him an ID of let's say 300.
-Now, we have to declare our employee here
-and then we'll import it into the repl.
-Also, it's underlined employee 3 just as
-it does in the editor, because it's
-mutable. Now we don't want to run yet
-because there's no expression here, we're
-just doing an assignment statement.
-So we'll just go to then to the end of
-the line press enter and then we'll say
-well print line employee 3.
-And at this point there is something we
-can do, so we'll hit ctrl enter and we'll
-see that we get employee 3 printed.
-Now, because we're in the repl, we don't
-actually have to use print line, so we
-can just type in employee 3 dot name for
-example and then hit ctrl enter and it
-will print John Doe, so it kind of knows
-that because you're in the repl, you
-want to see results and so it doesn't
-force you to actually type print line,
-but you can if you want.
-So the repple knows about definitions in
-your project, you do have to import them
-but it's aware of them and it also knows
-about previous definitions you've made,
-like for example once we declared
-employee 3 here, we didn't have to
-declare it again. Once we've used it we
-can just go ahead and keep using it in
-this instance of the of the repl, so if
-you want to play with some code, without
-having to compile and run it, this is a
-great way to do it and you know when
-you're first learning Kotlin, before you
-type a long statement into your file, you
-might want to try the repl and make
-sure it's going to do what the
-statements going to do, what you expect
-it to do. Now when you're finished
-playing, you can just press the red X on
-the left to stop and close the repl,
-if you don't want to close it, but you want
-to clear what's there and rebuild your
-project, you can just press the restart
-button right here. So if we were to do
-that, it actually rebuilds our project
-here and then it comes and says ok, I'm
-ready for action again or you can just
-close it and I've got a couple of tabs
-open here, so I'll close them all and
-there we go, that's the Kotlin read eval
-print loop. I'll see you in the next video.
+- Let's start by defining the terms enterprise
+- and enterprise integration.
+- An enterprise covers the whole supply chain of a business.
+- When I refer to enterprise systems,
+- I'm referring to the systems that are participating
+- in the supply chain.
+- Enterprises include, not only internal systems,
+- but external systems as well.
+- In order to gain value in the supply chain,
+- we need to make these systems communicate
+- with one another.
+- To accomplish this, we use enterprise
+- integration practices.
+- Enterprise integration connects disparate systems.
+- Connecting these systems is complex.
+- Enterprises are always evolving.
+- New systems are being built, purchased,
+- enhanced and acquired.
+- Often we don't control all the systems in the enterprise.
+- Finally, systems don't have the same
+- protocols for communication.
+- They may have different operating systems,
+- formats, languages, etc.
