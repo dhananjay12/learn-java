@@ -1,5 +1,8 @@
 package mynotes.concurrency;
 
+/**
+* * @author ben (https://github.com/kittylyst/optimizing-java)
+* */
 public class Caching {
     private final int ARR_SIZE = 2 * 1024 * 1024;
     private final int[] testData = new int[ARR_SIZE];
