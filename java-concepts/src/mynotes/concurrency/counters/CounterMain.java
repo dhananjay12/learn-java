@@ -8,7 +8,7 @@ public class CounterMain {
     public static final int REPS = 10_000_000;
 
     public static void main(String[] args) throws InterruptedException {
-        final Counter c = new VolatileCounter();
+        final Counter c = new AtomicCounter();
 
         Runnable r = () -> {
             for (int i = 0; i < REPS; i++) {
