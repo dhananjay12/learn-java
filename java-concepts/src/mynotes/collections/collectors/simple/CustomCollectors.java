@@ -29,4 +29,21 @@ public class CustomCollectors {
         );
     }
 
+    public static <T> Collector<T, ?, T> findJustOne(String error) {
+        return collectingAndThen(
+            toList(),
+            list -> {
+                if (list.size() == 0) {
+                    throw new RuntimeException("Empty result");
+                }
+
+                if (list.size() == 1) {
+                    return list.get(0);
+                }
+
+                throw new RuntimeException("More than one element found");
+            }
+        );
+    }
+
 }

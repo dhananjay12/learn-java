@@ -17,7 +17,7 @@ public class CustomCollectorsTest {
             try {
                 final Optional<Person> result = list().stream()
                     .filter(p -> p.getFname().equalsIgnoreCase(input))
-                    .collect(findOne("asd")); // Can have input args
+                    .collect(findOne()); // Can have input args
 
                 result.ifPresentOrElse(
                     person -> System.out.println(person),
