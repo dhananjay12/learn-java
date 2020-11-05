@@ -1,4 +1,4 @@
-package mynotes.concurrency;
+package com.mynotes.samples.caching;
 
 /**
 * * @author ben (https://github.com/kittylyst/optimizing-java)
