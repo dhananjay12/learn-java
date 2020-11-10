@@ -49,7 +49,7 @@ public class MyBenchmark {
             return false;
         }
         int top = (int) Math.sqrt(num) + 1;
-        for (int i = 2; i < top; i += 2) {
+        for (int i = 3; i < top; i += 2) {
             if (num % i == 0) {
                 return false;
             }
