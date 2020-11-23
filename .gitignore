@@ -2,7 +2,8 @@
 !.mvn/wrapper/maven-wrapper.jar
 .mvn
 mvn*
-
+**/out/**
+**/sources.txt
 */bin/
 */target/
 
