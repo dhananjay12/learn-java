@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mynotes.microservices.demo</groupId>
+    <artifactId>learn-java</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>learn-java</name>
+    <description>Demo project for spring microservices k8s</description>
+
+    <modules>
+        <module>design-patterns</module>
+        <module>java-concepts</module>
+        <module>jmh-test</module>
+        <module>lombok-test</module>
+        <module>perf-and-memory</module>
+    </modules>
+
+</project>

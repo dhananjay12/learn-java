@@ -7,7 +7,7 @@ class MyClass {
     @Todo(priority = Todo.Priority.MEDIUM, description = "business logic", status = Todo.Status.STARTED)
     public void incompleteMethod1() {
         //Some business logic is written
-        //But it’s not complete yet
+        //But itï¿½s not complete yet
     }
 
 }
