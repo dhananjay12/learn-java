@@ -18,6 +18,7 @@
         <module>jmh-test</module>
         <module>lombok-test</module>
         <module>perf-and-memory</module>
+        <module>java-17</module>
     </modules>
 
 </project>
