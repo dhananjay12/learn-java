@@ -6,7 +6,7 @@ means the way till java 11. These features were added over the period of time fr
 ### Other notable changes
 
 * Concurrent Mark Sweep (CMS) Garbage Collector (marked deprecated in java 9) has been removed.
-* New Z Garbage Collector.
+* New Z Garbage Collector and Shenandoah Garbage collector. They are for large heap size. G1 is still the default.
 * Nashorn Javascript Engine removed.
 * JDK 17 removes the experimental Java-based ahead-of-time (AOT) and just-in-time (JIT) compiler. 
   AOT and JIT were introduced in JDK 9 and 10, but there has been little use. And there is considerable maintenance cost.
