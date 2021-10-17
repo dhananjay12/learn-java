@@ -8,7 +8,7 @@ import javamodule.interest.api.Interest;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Welcome to simple Interest Calculator");
+        System.out.println("Welcome to Interest Calculator");
         double amount, numOfYears, rateOfInterest;
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the principle amount:");
