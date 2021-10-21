@@ -19,6 +19,7 @@
         <module>lombok-test</module>
         <module>perf-and-memory</module>
         <module>java-17</module>
+        <module>jlink/json-to-yaml</module>
     </modules>
 
 </project>

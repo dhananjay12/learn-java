@@ -8,8 +8,12 @@ mvn*
 */bin/
 */target/
 **/jars/**
+**/mods/**
 **/image/**
-
+**/dots/**
+**/tmp/**
+**/jlink_image/**
+**/*.jar
 ### STS ###
 .apt_generated
 .classpath

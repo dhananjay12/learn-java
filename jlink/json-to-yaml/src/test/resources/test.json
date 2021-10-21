@@ -1,0 +1,13 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "gender": "man",
+  "age": 24,
+  "hobbies": ["movies","biking"],
+  "address": {
+    "streetAddress": "Udhna",
+    "city": "San Jone",
+    "state": "CA",
+    "postalCode": "95221"
+  }
+}
