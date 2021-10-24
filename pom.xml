@@ -20,6 +20,7 @@
         <module>perf-and-memory</module>
         <module>java-17</module>
         <module>jlink/json-to-yaml</module>
+        <module>jlink/demo-rest-app</module>
     </modules>
 
 </project>
