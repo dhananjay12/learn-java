@@ -55,9 +55,10 @@ Usual way:
 ```
 java -p out:jacksonjars  -m utils.jsonToYaml/com.mynotes.util.JsonToYaml
 ```
-So we provided the `out` and `jacksonjars` as modules-path and then which module to run. 
-Note - We did not have to add `--add-modules java.sql` because we already copiled the project again with 
-`requires java.sql` in modules-info.java
+So we provided the `out` and `jacksonjars` as modules-path and then which module 
+to run. (separated by colons if there is more than one.)
+Note - We did not have to add `--add-modules java.sql` because we already compiled the project again with 
+`requires java.sql` in modules-info.java and it comes for jdk
 
 ```
 {

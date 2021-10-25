@@ -47,6 +47,7 @@ To use jlink, we have specify the module path with
 rm -rf jlink_image
 jlink -p out --add-modules interest --launcher interest.sh=interest/com.mynotes.util.Interest --output jlink_image
 ```
+`--add-modules` adding our modules for the path (`-p`). the rest of the Modules will be taken from JDK.
 Run the launcher script:
 
 ```

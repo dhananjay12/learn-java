@@ -26,6 +26,7 @@ jdeps \
     ${TMP_DIR}/org ${TMP_DIR}/BOOT-INF/classes ${TMP_DIR}/BOOT-INF/lib/*.jar
 
 #$sh show-modules.sh target/demo-rest-app.jar 11
+#Have to add module path because of this
 #Exception in thread "main" java.lang.module.FindException: Module java.annotation not found, required by org.apache.tomcat.embed.core
 #        at java.base/java.lang.module.Resolver.findFail(Resolver.java:893)
 #        at java.base/java.lang.module.Resolver.resolve(Resolver.java:192)

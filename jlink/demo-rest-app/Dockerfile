@@ -9,7 +9,8 @@ RUN jlink --strip-debug --no-header-files --no-man-pages --compress=2 --module-p
 # java: error while loading shared libraries: libz.so.1: cannot open shared object file: No such file or directory
 FROM debian:stable-slim AS build-env
 
-
+# Note that we are still copying the whole jar to the base image and the only thing we reduced is the base jdk image.
+# Not sure, if we can further reduce the image by creating the jar in a more modular way.
 FROM gcr.io/distroless/base
 COPY --from=java-build /jlink/jre-min /opt/jre-min
 COPY --from=build-env /lib/x86_64-linux-gnu/libz.so.1 /lib/x86_64-linux-gnu/libz.so.1
