@@ -12,6 +12,7 @@ mvn*
 **/mods/**
 **/image/**
 **/dots/**
+**/test/**
 **/tmp/**
 **/jlink_image/**
 **/*.jar

@@ -132,6 +132,8 @@ jar -uf ../jacksonjars/snakeyaml-1.27.jar -C . module-info.class
 cd ..
 rm -rf tmp
 ```
+Note - this is waht moditect and other plugins do 
+- https://github.com/moditect/moditect/blob/main/core/src/main/java/org/moditect/commands/GenerateModuleInfo.java#L343
 Now run again jlink:
 ```
 rm -rf jlink_image
