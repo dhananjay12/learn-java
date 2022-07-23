@@ -1,5 +1,6 @@
-package mynotes.completable.future;
+package mynotes.future;
 
+import mynotes.completable.future.HelloWorldFuture;
 import mynotes.utils.ThreadUtil;
 import org.junit.jupiter.api.Test;
 

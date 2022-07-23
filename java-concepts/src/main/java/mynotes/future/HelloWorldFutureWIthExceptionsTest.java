@@ -1,5 +1,7 @@
-package mynotes.completable.future;
+package mynotes.future;
 
+import mynotes.completable.future.HelloWorldFuture;
+import mynotes.completable.future.HelloWorldFutureWithExceptions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
